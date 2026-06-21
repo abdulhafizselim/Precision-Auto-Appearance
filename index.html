@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precision Auto Appearance</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+margin-bottom:25px;
+}
+
+.btn{
+background:#00bfff;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0088cc;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,191,255,.2);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+height:250px;
+object-fit:cover;
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.price-card{
+background:#111;
+padding:30px;
+text-align:center;
+border-radius:20px;
+}
+
+.price-card h3{
+font-size:1.8rem;
+margin-bottom:10px;
+}
+
+.price{
+font-size:2rem;
+color:#00bfff;
+margin-bottom:20px;
+}
+
+.booking{
+background:#111;
+padding:50px;
+border-radius:20px;
+max-width:800px;
+margin:auto;
+}
+
+.booking input,
+.booking select,
+.booking textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+.booking button{
+width:100%;
+padding:15px;
+background:#00bfff;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:1rem;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#050505;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="hero">
+<h1>Precision Auto Appearance</h1>
+<p>Professional Auto Detailing, Paint Correction, Ceramic Coatings & Premium Vehicle Care.</p>
+<a href="#booking" class="btn">Schedule Appointment</a>
+</div>
+</header>
+
+<section>
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="card">
+<h3>Exterior Detail</h3>
+<p>Deep wash, clay bar treatment, wax and paint enhancement.</p>
+</div>
+
+<div class="card">
+<h3>Interior Detail</h3>
+<p>Full vacuum, shampoo, leather treatment and odor removal.</p>
+</div>
+
+<div class="card">
+<h3>Ceramic Coating</h3>
+<p>Long-lasting protection and showroom shine.</p>
+</div>
+
+<div class="card">
+<h3>Paint Correction</h3>
+<p>Remove swirls and scratches for a flawless finish.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d">
+<img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1">
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Pricing</h2>
+<div class="pricing">
+<div class="price-card">
+<h3>Basic Detail</h3>
+<div class="price">$99</div>
+<p>Wash, Vacuum, Tire Shine</p>
+</div>
+
+<div class="price-card">
+<h3>Premium Detail</h3>
+<div class="price">$199</div>
+<p>Interior & Exterior Restoration</p>
+</div>
+
+<div class="price-card">
+<h3>Ceramic Package</h3>
+<div class="price">$599</div>
+<p>Professional Ceramic Coating</p>
+</div>
+</div>
+</section>
+
+<section id="booking">
+<h2 class="section-title">Book an Appointment</h2>
+
+<div class="booking">
+<form>
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option>Select Service</option>
+<option>Exterior Detail</option>
+<option>Interior Detail</option>
+<option>Ceramic Coating</option>
+<option>Paint Correction</option>
+</select>
+
+<input type="date" required>
+
+<textarea rows="5" placeholder="Additional Information"></textarea>
+
+<button type="submit">Schedule Appointment</button>
+</form>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Precision Auto Appearance | Professional Detailing Services</p>
+</footer>
+
+</body>
+</html>
